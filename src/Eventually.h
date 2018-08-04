@@ -71,6 +71,7 @@ class EvtPinListener : public EvtListener {
   public:
   EvtPinListener();
   EvtPinListener(int pin, EvtAction trigger);
+  EvtPinListener(int pin, bool targetValue, EvtAction trigger);
   EvtPinListener(int pin, int debounce, EvtAction action);
   int pin = 0;
   int debounce = 40;  
